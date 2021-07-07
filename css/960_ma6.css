@@ -1,0 +1,20 @@
+.fullsize_left {
+padding-left: 10px;
+margin-left: 0px;}
+
+.fullsize_right {
+padding-right: 10px;
+margin-right: 0px;}
+
+.fullsize {
+padding-left: 10px;
+margin-left: 0px;
+padding-right: 10px;
+margin-right: 0px;}
+
+.indent {
+margin-left:  10px;
+}
+
+.top_padding {
+padding-top: 10px;}

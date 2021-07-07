@@ -1,0 +1,163 @@
+body {
+    color: #999;
+    font-family: Vollkorn, Georgia, Times, "Times New Roman", serif;
+    line-height: 1.5em;
+    font-size: .9em;
+    padding: 20px 0 40px;
+}
+
+a,
+a:link,
+a:visited {
+    color: #999;
+    text-decoration: underline;
+}
+
+::selection,
+::-moz-selection,
+::-webkit-selection {
+    background: #AD4269;
+    color: #fff;
+}
+
+h1 {
+    font-weight: normal;
+    text-align: left;
+    font-size: 3em;
+    color: #000;
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+h2 {
+    line-height: 2em;
+    text-align: left;
+    font-size: 1.5em;
+    font-weight: normal;
+    color: #000;
+    padding: 0;
+}
+
+h3 {
+    display: block;
+    text-align: left;
+    font-size: 1.5em;
+    border-bottom: 1px #999 solid;
+    margin-top: 60px;
+    margin-bottom: 30px;
+    color: #000;
+    font-weight: normal;
+    padding: 0;
+}
+
+p,
+.para {
+    overflow: hidden;
+    padding-bottom: 10px;
+}
+
+li {
+    padding-bottom: 5px;
+}
+
+.job_item {
+    margin-bottom: 15px;
+}
+
+#header {
+    background-color: #fff;
+    background-repeat: no-repeat;
+    width: 960px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.float {
+    float: left;
+}
+
+.date {
+    text-align: right;
+    font-size: .9em;
+}
+
+.job,
+.project {
+    color: #000;
+    font-size: 1.25em;
+}
+
+.lang,
+.small {
+    font-size: .9em;
+}
+
+.big {
+    font-size: 1.1em;
+}
+
+.lang a,
+.lang a:link,
+.lang a:visited,
+.lang a:hover,
+.lang a:active {
+    text-decoration: none;
+}
+
+.mailsafe,
+.hide {
+    display: none;
+}
+
+.job a,
+.job a:link,
+.job a:visited,
+.company a,
+.company a:link,
+.company a:visited,
+.project a,
+.project a:link,
+.project a:visited,
+.company {
+    color: #000;
+}
+
+a:hover,
+a:active,
+.job a:hover,
+.job a:active,
+.company a:hover,
+.company a:active,
+.project a:hover,
+.project a:active {
+    color: #AD4269;
+    text-decoration: underline;
+}
+
+span.nobreak,
+.date span {
+    white-space: nowrap;
+}
+
+/* Larger than tablet (also point when grid becomes active) */
+@media (max-width: 768px) {
+    .date {
+        text-align: left;
+    }
+
+    .odd {}
+
+    .even {}
+
+    .items {
+        border-top: 1px #ccc dotted;
+        padding-top: 15px;
+
+    }
+
+    .first {
+
+        padding-top: 0px;
+        border-top: 0px;
+    }
+}

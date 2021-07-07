@@ -1,0 +1,36 @@
+- start-date: Sep. 2004
+  end-date: Jan. 2008
+  university: Cologne University of Applied Sciences 
+  university-url: https://www.medieninformatik.th-koeln.de/
+  title: Media informatics, Master of Science
+  content:
+    - text: In my postgrad studies at Cologne University of Applied Sciences I mainly focused on human-computer interaction, interaction design and digital media. Furthermore, I enrolled for courses in development methodology, project management and accessibility.
+    - text: I wrote my Master’s Thesis in collaboration with Pixelpark within their research project »LIVE – staging of Media Events«. The paper based on my Master’s Thesis has been accepted for EuroITV 2008
+  tasks:
+    - task: "Master's Thesis: »Recommender Systems for Live-Transmission in interactive Television: Gathering and Rating User Feedback«"
+    - task: MyFH project to develop a central directory server at Cologne University of Applied Sciences
+
+    
+- start-date: Apr. 2004
+  end-date: Aug. 2004
+  university: University of Applied Sciences Bonn-Rhein-Sieg
+  university-url: https://www.h-brs.de/en/inf
+  title: Computer Science, Master of Science
+  content: 
+    - text: My main subjects at University of Applied Sciences Bonn-Rhein-Sieg were Colorimetry and color theory, object-oriented component architecture, medical informatics and theoretical computer science.
+    
+
+- start-date: Oct. 2000
+  end-date: Mar. 2004
+  university: Cologne University of Applied Sciences 
+  university-url: https://www.medieninformatik.th-koeln.de/
+  title: Media informatics, Bachelor of Science
+  content: 
+    - text: During my Bachelor’s studies, I focused in human-computer interaction, multimedia development project management and operating systems.
+    - text: In my Bachelor’s Thesis – in cooperation with the Cologne University of Applied Sciences’ Institute of Automation and Industrial IT and Siemens – I evaluated the web-based e- learning course SIMATIC-telestart.
+  tasks:
+    - task: "Bachelor's Thesis: »Usability Evaluation of a Web-based e-learning course«"
+    - task: "Mobile Media: Design an application with photo geocoding"
+    - task: Concept design and development of an SMS server for communication between students and university
+
+    

@@ -1,0 +1,11 @@
+.noprint {
+display: none;
+}
+
+a, a:link, a:visited
+{
+	text-decoration: none !important;
+}
+
+
+a[href^="http:"], a[href^="https:"] {   background: transparent;  padding-right: 0px;}
