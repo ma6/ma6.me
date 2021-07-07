@@ -1,24 +1,24 @@
-- about:
-  - name: Martin Gude
-    slogan: Experience Strategist, Product Manager, and Agile Enthusiast
-    location: Berlin, Germany
-    picture: ma6.jpg
-    picture2x: ma6@2x.jpg
-    work:
-      - name: Experience One
-        url: https://www.experienceone.com/
-    education:
-      - name: Cologne University of Applied Sciences
-        url: https://www.th-koeln.de/
-    bio: >
-      Zodiac Coffee, Ascendant Apple Pie. חיה! Digital Strategy. UX. Liberal.
-      'Straya. Israel. From Cologne. Cyclist. #EFFZEH #FCSP.
-      Co-Organiser <a href="https://www.uxcampeurope.org/">UXcamp Europe</a>.
+about:
+  name: Martin Gude
+  slogan: Experience Strategist, Product Manager, and Agile Enthusiast
+  location: Berlin, Germany
+  picture: ma6.jpg
+  picture2x: ma6@2x.jpg
+  work:
+    name:
+    url: https://www.experienceone.com/
+  education:
+    name: Cologne University of
+    url: https://www.th-koeln.de/
+  bio: >
+    Zodiac Coffee, Ascendant Apple Pie. חיה! Digital Strategy. UX. Liberal.
+    'Straya. Israel. From Cologne. Cyclist. #EFFZEH #FCSP.
+    Co-Organiser <a href="https://www.uxcampeurope.org/">UXcamp Europe</a>.
 
-- services:
-  - service: Twitter
-    url: https://twitter.com/ma6
-    icon: twitter
-  - service: facebook
-    url: https://www.facebook.com/martin.gude
-    icon: facebook
+services:
+- service: Twitter
+  url: https://twitter.com/ma6
+  icon: twitter
+- service: facebook
+  url: https://www.facebook.com/martin.gude
+  icon: facebook
