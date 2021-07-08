@@ -5,3 +5,5 @@ redirect_from:
 
 
 {%include about.html %}
+
+{%include services.html %}

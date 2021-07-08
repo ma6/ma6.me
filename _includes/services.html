@@ -1,0 +1,9 @@
+services
+
+
+{% for item in site.data.content.services %}
+
+<li>Service {{item.service}},  {{item.url}},  {{item.icon}}, </li>
+
+{% endfor %}
+</ul>
