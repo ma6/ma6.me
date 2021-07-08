@@ -27,7 +27,8 @@ compress_html:
   comments: []
   endings: []
   ignore:
-    envs: ["development", "dotcom"]
+    #envs: ["development", "dotcom"]
+    envs: all
   blanklines: false
   profile: false
   startings: []
