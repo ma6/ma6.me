@@ -31,6 +31,12 @@ services:
 - service: Instagram
   url: https://instagram.com/martingude
   icon: Instagram
+- service: ScoopIt
+  url: https://www.scoop.it/u/ma6_me
+  icon: ScoopIt
 - service: GitHub
   url: https://github.com/ma6
   icon: GitHub
+- service: Slideshare
+  url: https://slideshare.net/ma6
+  icon: slideshare
