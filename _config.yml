@@ -17,7 +17,7 @@ defaults:
 plugins:
   - jekyll-sitemap
   - jekyll-redirect-from
-  
+
 sass:
   style: compressed
 theme: jekyll-theme-cayman
@@ -27,7 +27,7 @@ compress_html:
   comments: []
   endings: []
   ignore:
-    envs: ["development"]
+    envs: ["development", "all"]
   blanklines: false
   profile: false
   startings: []
