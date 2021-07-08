@@ -7,16 +7,20 @@ layout: compress
 <head>
 
     {% capture timestamp %}{{ 'now' | date: "%s" }}{% endcapture %}
-    <script id="Cookiebot" src="https://consent.cookiebot.com/uc.js" data-cbid="f131ea56-32fa-415d-9859-3ad038da5ab4" data-blockingmode="auto" type="text/javascript"></script>
+    {%include cookiebanner.html %}
+
+    {% assign meta = site.data.content.meta %}
+    {% assign about = site.data.content.about %}
+
 
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <title>Martin Gude - Experience Strategist and Product Manager</title>
-    <meta name="DC.title" content="Martin Gude - Experience Strategist and Product Manager" />
+    <title>{{about.name}} {{about.slogan}} from {{about.location}}</title>
+    <meta name="DC.title" content="{{about.name}} {{about.slogan}} from {{about.location}}" />
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <meta http-equiv="Content-Script-Type" content="text/javascript" />
-    <meta name="keywords" content="Martin Gude, User Experience Consultant, Information Architect, Concept Designer">
-	<meta name="description" content="My name is Martin Gude. I am an Experience Strategist, Product Manager, and Agile Enthusiast. I help people and teams to generate exciting ideas and turning them real.">
+    <meta name="keywords" content="{{meta.keywords}}">
+	  <meta name="description" content="{{meta.description}}">
 
     <!-- CSS -->
     <link rel="stylesheet" href="//fonts.staticsi.de/vollkorn-v8-latin-ext_latin/css/vollkorn.css">
