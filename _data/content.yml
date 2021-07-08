@@ -21,25 +21,25 @@ about:
 services:
 - service: LinkedIn
   url: https://de.linkedin.com/in/martingude/
-  icon: twitter
+  icon: icon-linkedin
 - service: XING
   url: https://www.xing.com/profile/Martin_Gude
-  icon: facebook
+  icon: icon-xing
 - service: Twitter
   url: https://www.twitter.com/ma6
-  icon: facebook
+  icon: icon-twitter
 - service: facebook
   url: https://www.facebook.com/martin.gude
-  icon: facebook
+  icon: icon-facebook
 - service: Instagram
   url: https://instagram.com/martingude
-  icon: Instagram
+  icon: icon-instagram
 - service: ScoopIt
   url: https://www.scoop.it/u/ma6_me
-  icon: ScoopIt
+  icon: icon-scoopit
 - service: GitHub
   url: https://github.com/ma6
-  icon: GitHub
+  icon: icon-github
 - service: Slideshare
   url: https://slideshare.net/ma6
-  icon: slideshare
+  icon: icon-slideshare
