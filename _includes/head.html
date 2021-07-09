@@ -5,7 +5,7 @@
   {% assign meta = site.data.content.meta %}
   {% assign about = site.data.content.about %}
 
-  {% capture title %}
+  {% capture title -%}
     {{about.name}}
     {% if {{about.slogan}} %}
       — {{about.slogan}}
@@ -17,8 +17,8 @@
 
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>{{- title | strip_newlines -}}</title>
-  <meta name="DC.title" content="{{- title  | strip_newlines -}}" />
+  <title>{{title | strip_newlines}}</title>
+  <meta name="DC.title" content="{{title  | strip_newlines}}" />
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
   <meta http-equiv="Content-Script-Type" content="text/javascript" />
   <meta name="keywords" content="{{meta.keywords}}">
