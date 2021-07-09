@@ -2,7 +2,7 @@ about
 
 {% assign about = site.data.content.about %}
 
-{{about.name}} from {{about.location}}<br>
+{{about.name}} from <a href="https://www.google.de/maps/search/{{- about.location | url_encode -}}">{{about.location}}</a><br>
 {{about.slogan}}<br>
 {{about.bio}}<br>
 {{about.picture}}<br>
