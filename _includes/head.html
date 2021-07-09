@@ -1,10 +1,7 @@
 <head>
 
     {% capture timestamp %}{{ 'now' | date: "%s" }}{% endcapture %}
-    {% capture title %}{{about.name}}
-    {% if item.tasks %}
-    {% endcapture %}
-
+  
     {% assign meta = site.data.content.meta %}
     {% assign about = site.data.content.about %}
 
