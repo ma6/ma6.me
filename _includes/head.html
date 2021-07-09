@@ -1,15 +1,28 @@
 <head>
 
     {% capture timestamp %}{{ 'now' | date: "%s" }}{% endcapture %}
+    {% capture title %}{{about.name}}
+    {% if item.tasks %}
+    {% endcapture %}
 
     {% assign meta = site.data.content.meta %}
     {% assign about = site.data.content.about %}
 
+    {% capture title %}
+      {{about.name}}
+      {% if {{about.slogan}} %}
+        — {{about.slogan}}
+      {% endif %}
+      {% if {{about.location}} %}
+        from {{about.location}}
+      {% endif %}
+    {% endcapture %}
+
 
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <title>{{about.name}} — {{about.slogan}} from {{about.location}}</title>
-    <meta name="DC.title" content="{{about.name}} {{about.slogan}} from {{about.location}}" />
+    <title>{{title}}</title>
+    <meta name="DC.title" content="{{title}}" />
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <meta http-equiv="Content-Script-Type" content="text/javascript" />
     <meta name="keywords" content="{{meta.keywords}}">
