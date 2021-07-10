@@ -6,12 +6,12 @@
   {% assign about = site.data.content.about %}
 
   {% capture title -%}
-    {{about.name}}
+    {{- about.name -}}
     {% if {{about.slogan}} %}
-      — {{about.slogan}}
+      — {{about.slogan -}}
     {% endif %}
     {% if {{about.location}} %}
-      from {{about.location}}
+      from {{- about.location -}}
     {% endif %}
   {% endcapture %}
 
