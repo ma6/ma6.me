@@ -1,57 +1,41 @@
 <head>
 
-  {% capture timestamp %}{{ 'now' | date: "%s" }}{% endcapture %}
+    {% capture timestamp %}{{ 'now' | date: "%s" }}{% endcapture %} {% assign meta = site.data.content.meta %} {% assign about = site.data.content.about %} {% capture title %} {{ about.name }} {% if {{about.slogan}} %} — {{about.slogan }} {% endif %} {% if
+    {{about.location}} %} from {{ about.location }} {% endif %} {% endcapture %}
 
-  {% assign meta = site.data.content.meta %}
-  {% assign about = site.data.content.about %}
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>{{title | strip_newlines}}</title>
+    <meta name="DC.title" content="{{title  | strip_newlines }}" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="Content-Script-Type" content="text/javascript" />
+    <meta name="keywords" content="{{meta.keywords}}">
+    <meta name="description" content="{{meta.description}}">
 
-  {% capture title -%}
-    {{ about.name }}
-    {% if {{about.slogan}} %}
-      — {{about.slogan }}
-    {% endif %}
-    {% if {{about.location}} %}
-      from {{ about.location }}
-    {% endif %}
-  {% endcapture %}
+    <!-- CSS -->
+    <link rel="stylesheet" href="//fonts.staticsi.de/vollkorn-v8-latin-ext_latin/css/vollkorn.css">
+    <link rel="stylesheet" type="text/css" media="all" href="/css/screen.css?{{ timestamp  }}" />
+    <link rel="stylesheet" href="//fonts.staticsi.de/icomoon/style.css">
 
-  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>{{title | strip_newlines}}</title>
-  <meta name="DC.title" content="{{title  | strip_newlines | replace: "  ", " " }}" />
-  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-  <meta http-equiv="Content-Script-Type" content="text/javascript" />
-  <meta name="keywords" content="{{meta.keywords}}">
-  <meta name="description" content="{{meta.description}}">
+    <link rel="stylesheet" href="css/reset.css?{{ timestamp  }}">
+    <link rel="stylesheet" type="text/css" media="all" href="/css/skeleton.css?{{ timestamp  }}" />
+    <link rel="stylesheet" type="text/css" media="all" href="/css/styles.css?{{ timestamp}}" />
+    <link rel="stylesheet" type="text/css" media="print" href="/css/print.css?{{ timestamp }}" />
+    <!-- JAVASCRIPT -->
+    <script type="text/javascript" src="/js/rot13.js"></script>
 
-  <!-- CSS -->
-  <link rel="stylesheet" href="//fonts.staticsi.de/vollkorn-v8-latin-ext_latin/css/vollkorn.css">
-  <link rel="stylesheet" type="text/css" media="all" href="/css/screen.css?{{ timestamp  }}" />
-  <link rel="stylesheet" href="//fonts.staticsi.de/icomoon/style.css">
+    <link rel="shortcut icon" href="//martin-gude.com/favicon.png" type="image/png" />
+    <link rel="image_src" href="//martin-gude.com/favicon.png" />
 
-  <link rel="stylesheet" href="css/reset.css?{{ timestamp  }}">
-  <link rel="stylesheet" type="text/css" media="all" href="/css/skeleton.css?{{ timestamp  }}" />
-  <link rel="stylesheet" type="text/css" media="all" href="/css/styles.css?{{ timestamp}}" />
-  <link rel="stylesheet" type="text/css" media="print" href="/css/print.css?{{ timestamp }}" />
-  <!-- JAVASCRIPT -->
-  <script type="text/javascript" src="/js/rot13.js"></script>
-
-  <link rel="shortcut icon" href="//martin-gude.com/favicon.png" type="image/png" />
-  <link rel="image_src" href="//martin-gude.com/favicon.png" />
-
-  <!-- Add cookiebanner -->
-  {% comment %}
-    {%include cookiebanner.html %}
-  {% endcomment %}
+    <!-- Add cookiebanner -->
+    {% comment %} {%include cookiebanner.html %} {% endcomment %}
 
 
-  <!-- Fix IE5-7 to behave like IE8 -->
-  <!--[if lt IE 8]>
+    <!-- Fix IE5-7 to behave like IE8 -->
+    <!--[if lt IE 8]>
     <script src="//ie7-js.googlecode.com/svn/version/2.0(beta3)/IE8.js" type="text/javascript"></script>
   <![endif]-->
 
-  {% unless site.github.environment == "development" %}
-    {%include tracking.html %}
-  {% endunless %}
+    {% unless site.github.environment == "development" %} {%include tracking.html %} {% endunless %}
 
 </head>

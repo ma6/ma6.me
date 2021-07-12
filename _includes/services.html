@@ -1,16 +1,14 @@
-services
-
-{% assign about = site.data.content.about %}
+services {% assign about = site.data.content.about %}
 
 <ul>
 
-{% for item in site.data.content.services %}
+    {% for item in site.data.content.services %}
 
-  <li>
-    <a href="{{item.url}}">
-      <i class="{{item.icon}}"></i><span class="icon-desc">{{about.name}} on {{item.service}}</span>
-    </a>
-  </li>
+    <li>
+        <a href="{{item.url}}">
+            <i class="{{item.icon}}"></i><span class="icon-desc">{{about.name}} on {{item.service}}</span>
+        </a>
+    </li>
 
-{% endfor %}
+    {% endfor %}
 </ul>
