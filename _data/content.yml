@@ -24,9 +24,6 @@ services:
 - service: LinkedIn
   url: https://de.linkedin.com/in/martingude/
   icon: icon-linkedin
-- service: XING
-  url: https://www.xing.com/profile/Martin_Gude
-  icon: icon-xing
 - service: Twitter
   url: https://www.twitter.com/ma6
   icon: icon-twitter
