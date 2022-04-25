@@ -1,6 +1,7 @@
 title: "Martin Gude"
 name: "Martin Gude"
 markdown: kramdown
+timezone: Europe/Berlin
 exclude: ["README.md", "/Gemfile", "/Gemfile.lock", "CNAME"]
 
 collections:
